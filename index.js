@@ -26,7 +26,7 @@
 
 
      function lastSevenInWords (today = new Date()) {
-        const daysNo = { '1': 'M', '2': 'T', '3': 'WED', '4': 'THUR', '5': 'F', '6': 'SAT', '7': 'SUN' };
+        const daysNo = { '1': 'MON', '2': 'TUE', '3': 'WED', '4': 'THUR', '5': 'FRI', '6': 'SAT', '7': 'SUN' };
         const arr = lastSevenInNumbers(today);
 
         const newArr = arr.map(key => {

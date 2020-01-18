@@ -1,5 +1,5 @@
 {
-  "name": "last-seven-days",
+  "name": "npm-last-seven-days",
   "version": "1.0.0",
   "description": "The package returns an array of the last days",
   "main": "index.js",
@@ -11,5 +11,9 @@
     "last-seven-days"
   ],
   "author": "drkimpatrick",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrKimpatrick/npm-last-seven-days.git"
+  }
 }
