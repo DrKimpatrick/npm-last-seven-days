@@ -1,0 +1,15 @@
+{
+  "name": "last-seven-days",
+  "version": "1.0.0",
+  "description": "The package returns an array of the last days",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "last-seven-days"
+  ],
+  "author": "drkimpatrick",
+  "license": "ISC"
+}
