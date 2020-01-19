@@ -6,7 +6,7 @@
 
     function lastSevenInNumbers (today = new Date()){
         const date = isValidDate(today);
-        const weekDay = date.getDay(); // day of the week
+        const weekDay = date.getDay() == 0 ? 7:  date.getDay(); // day of the week
         const weekdays = [1, 2, 3, 4, 5, 6, 7]; // Week days
         
         const sortedDays = [];
@@ -28,13 +28,20 @@
 
         const finalArr = [...h, ...firstArr];
 
+        // Get index of 0
+        const index = finalArr.indexOf(7);
+
+        if (index !== -1) {
+            finalArr[index] = 0;
+        }
+
         return finalArr;
     }
 
 
      function lastSevenInWords (today = new Date()) {
         const date = isValidDate(today);
-        const daysNo = { '1': 'MON', '2': 'TUE', '3': 'WED', '4': 'THUR', '5': 'FRI', '6': 'SAT', '7': 'SUN' };
+        const daysNo = { '1': 'MON', '2': 'TUE', '3': 'WED', '4': 'THUR', '5': 'FRI', '6': 'SAT', '0': 'SUN' };
         const arr = lastSevenInNumbers(date);
 
         const newArr = arr.map(key => {

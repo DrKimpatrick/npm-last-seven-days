@@ -12,6 +12,7 @@
     - All methods accept an optional date parameter
     - Current date is considered if date param is not passed in
     - If date param is invalid, current date is considered
+    - { '1': 'MON', '2': 'TUE', '3': 'WED', '4': 'THUR', '5': 'FRI', '6': 'SAT', '0': 'SUN' }
 
 #### Example
 
@@ -27,7 +28,7 @@
   const days = lastSevenInNumbers(new Date());
 
   // say today is friday
-  // [6, 7, 1, 2, 3, 4, 5]
+  // [6, 0, 1, 2, 3, 4, 5]
 
   ```
 
